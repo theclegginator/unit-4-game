@@ -1,0 +1,8 @@
+.charPic {
+    margin-right: 10px;
+    border: 2px solid darkgray;
+}
+
+.charPic:hover { 
+    border-color: rgb(13, 69, 255);
+  }
