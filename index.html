@@ -20,30 +20,45 @@
 
 
     <div class="container">
-        <!-- Character Select Area -->
-        <div class="row">
-            <h2>Character Selection</h2>
+        <!-- Random Number Display -->
+        <div class="row text-center">
+            <h2 class="col">Number to Reach:</h2>
         </div>
-        <div id="charSelect">
-            <div class="row">
-                <img src="https://via.placeholder.com/150?text=Char1" alt="Char1" id="char1" class="charPic rounded">
-                <img src="https://via.placeholder.com/150?text=Char2" alt="Char2" id="char2" class="charPic rounded">
-                <img src="https://via.placeholder.com/150?text=Char3" alt="Char3" id="char3" class="charPic rounded">
-                <img src="https://via.placeholder.com/150?text=Char4" alt="Char4" id="char4" class="charPic rounded">
+        <div class="row text-center">
+            <h3 class="col" id="answer"></h3>
+        </div>
+
+        <!-- Player Current Score -->
+        <div class="row text-center">
+            <h2 class="col">Current Score:</h2>
+        </div>
+        <div class="row text-center">
+            <h3 class="col" id="score"></h3>
+        </div>
+
+        <!-- Crystal Select Area -->
+        <div class="row text-center">
+            <h2 class="col">Choose a Crystal!</h2>
+        </div>
+        <div>
+            <div class="row text-center">
+                <div class="col">
+                    <img src="assets/images/ruby.png" alt="Crystal Type 1" id="crystal1" class="charPic rounded">
+                    <img src="assets/images/saphire.png" alt="Crystal Type 1" id="crystal2" class="charPic rounded">
+                    <img src="assets/images/emerald.png" alt="Crystal Type 1" id="crystal3" class="charPic rounded">
+                    <img src="assets/images/garnet.png" alt="Crystal Type 1" id="crystal4" class="charPic rounded">
+                </div>
             </div>
         </div>
-        <!-- Enemy Select Area -->
-        <div class="row">
-            <h2>Enemy Selection</h2>
-        </div>
-        <div id="enemySelect" class="row">
-        </div>
-        <!-- Battle Arena -->
-        <div class="row">
-            <h2>Battle Arena</h2>
-        </div>
-        <div id="battleArena" class="row">
 
+        <!-- Wins and Losses Display -->
+        <div class="row text-center">
+            <h2 class="col">Wins:</h2>
+            <h2 class="col">Losses:</h2>
+        </div>
+        <div class="row text-center">
+            <h3 class="col" id="wins"></h3>
+            <h3 class="col" id="losses"></h3>
         </div>
     </div>
     <script type="text/javascript" src="assets/javascript/game.js"></script>
