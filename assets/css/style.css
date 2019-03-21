@@ -1,8 +1,40 @@
 .charPic {
     margin-right: 10px;
-    border: 2px solid darkgray;
+    border-left: 3px solid rgb(153, 147, 147);
+    border-top: 3px solid rgb(180, 178, 178);
+    border-right: 3px solid rgb(180, 178, 178);
+    border-bottom: 6px solid rgb(107, 107, 107);
 }
 
-.charPic:hover { 
+.crystalContainer {
+    background-color: rgb(224, 223, 223);
+    border-left: 3px solid rgb(153, 147, 147);
+    border-top: 3px solid rgb(180, 178, 178);
+    border-right: 3px solid rgb(180, 178, 178);
+    border-bottom: 6px solid rgb(107, 107, 107);
+}
+
+.topStyle {
+    background-color: white;
+}
+
+/* .charPic:hover { 
     border-color: rgb(13, 69, 255);
-  }
+  } */
+
+img {
+    margin: 10px;
+}
+
+h2 {
+    padding: 10px;
+}
+
+h4 {
+    padding: 10px;
+}
+
+body {
+    background-image: url('../../assets/images/dark-triangles.png');
+    color: white;
+}

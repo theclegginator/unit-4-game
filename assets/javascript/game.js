@@ -32,11 +32,29 @@ function checkScore() {
     if (score === answer) {
         wins++;
         gameStart();
+        // animate the wins green and back to white.
+        $(function(){
+            $("h3#wins").animate({
+            color: "#409b39"}, "slow");
+        });
+        $(function(){
+            $("h3#wins").animate({
+            color: "white"}, "slow");
+        });
     }
     // If player score > answer, losses++; gameStart()
     else if (score > answer) {
         losses++;
         gameStart();
+        // animate the losses red and back to white.
+        $(function(){
+            $("h3#losses").animate({
+            color: "rgb(255, 72, 72)"}, "slow");
+        });
+        $(function(){
+            $("h3#losses").animate({
+            color: "white"}, "slow");
+        });
     }
     // If player score < answer, keep playing
 }
@@ -70,3 +88,32 @@ $("#crystal4").click(function() {
     $("#score").text(score);
     checkScore();
 })
+
+// jQuery Button Press Styling
+$( "#crystal1" ).mousedown(function() {
+    $("#crystal1").css("border-bottom", "3px solid rgb(107, 107, 107)");
+  });
+$( "#crystal1" ).mouseup(function() {
+    $("#crystal1").css("border-bottom", "6px solid rgb(107, 107, 107)");
+});
+
+$( "#crystal2" ).mousedown(function() {
+    $("#crystal2").css("border-bottom", "3px solid rgb(107, 107, 107)");
+  });
+$( "#crystal2" ).mouseup(function() {
+    $("#crystal2").css("border-bottom", "6px solid rgb(107, 107, 107)");
+});
+
+$( "#crystal3" ).mousedown(function() {
+    $("#crystal3").css("border-bottom", "3px solid rgb(107, 107, 107)");
+  });
+$( "#crystal3" ).mouseup(function() {
+    $("#crystal3").css("border-bottom", "6px solid rgb(107, 107, 107)");
+});
+
+$( "#crystal4" ).mousedown(function() {
+    $("#crystal4").css("border-bottom", "3px solid rgb(107, 107, 107)");
+  });
+$( "#crystal4" ).mouseup(function() {
+    $("#crystal4").css("border-bottom", "6px solid rgb(107, 107, 107)");
+});

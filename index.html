@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>RPG Game</title>
+    <title>Crystal Collector</title>
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -17,12 +17,12 @@
         src="http://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
     <div class="container">
         <!-- Random Number Display -->
         <div class="row text-center">
-            <h2 class="col">Number to Reach:</h2>
+            <h2 class="col" style="margin-top: 20px;">Number to Reach:</h2>
         </div>
         <div class="row text-center">
             <h3 class="col" id="answer"></h3>
@@ -38,15 +38,16 @@
 
         <!-- Crystal Select Area -->
         <div class="row text-center">
-            <h2 class="col">Choose a Crystal!</h2>
+            <h4 class="col" style="color:rgb(141, 99, 209);">Select a Crystal!</h4>
         </div>
         <div>
             <div class="row text-center">
-                <div class="col">
+                <div class="col-1"></div>
+                <div class="col-10 crystalContainer rounded">
                     <img src="assets/images/ruby.png" alt="Crystal Type 1" id="crystal1" class="charPic rounded">
                     <img src="assets/images/saphire.png" alt="Crystal Type 1" id="crystal2" class="charPic rounded">
                     <img src="assets/images/emerald.png" alt="Crystal Type 1" id="crystal3" class="charPic rounded">
-                    <img src="assets/images/garnet.png" alt="Crystal Type 1" id="crystal4" class="charPic rounded">
+                    <img src="assets/images/garnet.png" alt="Crystal Type 1" id="crystal4" class="charPic rounded touchSensitive">
                 </div>
             </div>
         </div>
