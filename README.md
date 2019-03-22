@@ -1,4 +1,3 @@
-# unit-4-game
 # Crystal Collector
 
 # How to Play
