@@ -58,3 +58,9 @@ body {
     background-image: url('../../assets/images/dark-triangles.png');
     color: white;
 }
+
+@media screen and (min-width: 576px) {
+    .topRow {
+        margin-top: 50px;
+    }
+}
